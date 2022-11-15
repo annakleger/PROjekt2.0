@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Retalic_30_Lt';
+    src: url('../fonts/GT-Planar-Retalic-30-Light-Trial.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Italic_30_Lt';
+    src: url('../fonts/GT-Planar-Italic-30-Light-Trial.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Regular_Lt';
+    src: url('../fonts/GT-Planar-Light-Trial.woff2') format('woff2');
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+ ::-webkit-scrollbar {
+    width: 0;
+    /* Remove scrollbar space */
+    background: transparent;
+    /* Optional: just make scrollbar invisible */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #131423;
+}
+
+.frage {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.pattern {
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+
+.fadeIn {
+    transition: ease-in-out;
+    transition-property: opacity;
+    transition-duration: 1s;
+    transition-delay: 1s;
+}
+
+@media (max-width: 500px) {
+    h1 {
+        font-size: 50px !important;
+        text-align: left;
+    }
+    p {
+        font-size: 2rem;
+    }
+}
+
+h1 {
+    color: #84416e;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 4vw;
+    font-weight: 600;
+    text-align: center;
+}
+
+p {
+    color: #84416e;
+    font-family: Helvetica, Arial, sans-serif;
+    hyphens: auto;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+}
+
+.section {
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    scroll-snap-align: start;
+}

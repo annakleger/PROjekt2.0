@@ -1,26 +1,26 @@
-// collect all the divs
-var divs = document.getElementsByTagName('div');
-// get window width and height
+// alle divs sammeln
+var divs = document.getElementsByClassName('pattern');
+// window grösse und breite ermitteln
 var winWidth = window.innerWidth;
 var winHeight = window.innerHeight;
 
-// i stands for "index". you could also call this banana or haircut. it's a variable
+
 for (var i = 0; i < divs.length; i++) {
 
-    // shortcut! the current div in the list
+    // aktuelles div in der Liste
     var thisDiv = divs[i];
 
-    // get random numbers for each element
+    // random Nummer aus der Liste
     randomTop = getRandomNumber(0, winHeight);
     randomLeft = getRandomNumber(0, winWidth);
 
-    // update top and left position
+    // update obere und linke position 
     thisDiv.style.top = randomTop + "px";
     thisDiv.style.left = randomLeft + "px";
 
 }
 
-// function that returns a random number between a min and max
+// funktion welche eine zufällige zahl zwischen min und max ergibt
 function getRandomNumber(min, max) {
 
     return Math.random() * (max - min) + min;

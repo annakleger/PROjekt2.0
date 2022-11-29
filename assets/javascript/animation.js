@@ -5,7 +5,10 @@ var winWidth = window.innerWidth;
 var winHeight = window.innerHeight;
 
 
+
 for (var i = 0; i < divs.length; i++) {
+
+
 
     // aktuelles div in der Liste
     var thisDiv = divs[i];
@@ -18,11 +21,23 @@ for (var i = 0; i < divs.length; i++) {
     thisDiv.style.top = randomTop + "px";
     thisDiv.style.left = randomLeft + "px";
 
-}
+    async function delay(time) {
+        await delay(time);
+    }
 
-// funktion welche eine zufällige zahl zwischen min und max ergibt
-function getRandomNumber(min, max) {
+    delay(8000);
 
-    return Math.random() * (max - min) + min;
+
+
+
+    // funktion welche eine zufällige zahl zwischen min und max ergibt
+    function getRandomNumber(min, max) {
+
+        return Math.random() * (max - min) + min;
+
+    }
+
+
+
 
 }

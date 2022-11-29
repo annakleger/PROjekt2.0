@@ -28,8 +28,49 @@ html {
 body {
     margin: 0;
     padding: 0;
-    background-color: #131423;
+    background-color: rgb(19, 20, 35);
     /* scroll-behavior: smooth; */
+    font-size: 100%;
+}
+
+h1 {
+    /* Da im Vorfeld keine feste Textgröße definiert wurde, richtet sich der Wert von em nach der standardmäßigen Einstellung des genutzten Browsers
+    in der Regel 16 Pixel. */
+    /* 1em = 16px */
+    font-size: 4em;
+    color: #84416e;
+    font-family: Helvetica, Arial, sans-serif;
+    /* font-size: 4vw; */
+    font-weight: 600;
+    text-align: center;
+}
+
+
+/* Hierüber lassen sich verschiedene Breiten errechnen, an die man die Schriftgröße anpassen möchte */
+
+
+/* über 1024 Pixel
+bis zu 1024 Pixel -> 1024 : 16 = 64em
+bis zu 800 Pixel -> 800 : 16 = 50em
+bis zu 480 Pixel -> 480 : 16 = 30em */
+
+@media screen and (max-width: 64em) {
+    h1 {
+        font-size: 2.5em;
+        /* line-height: 3em; */
+    }
+}
+
+@media screen and (max-width: 50em) {
+    h1 {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 30em) {
+    h1 {
+        font-size: 1.5em;
+    }
 }
 
 .frage {
@@ -44,12 +85,15 @@ body {
 
 .einleitung {
     width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
     height: 100vh;
+    display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
     z-index: 100;
-    font-size: 3vw;
+    font-size: 2.5vw;
     font-weight: 400;
     text-align: left;
 }
@@ -77,13 +121,14 @@ body {
     }
 }
 
-h1 {
+
+/* h1 {
     color: #84416e;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 4vw;
     font-weight: 600;
     text-align: center;
-}
+} */
 
 p {
     color: #84416e;
@@ -96,6 +141,8 @@ p {
     width: 100%;
     height: 100vh;
     scroll-behavior: smooth;
+    justify-content: center;
+    text-align: center;
     overflow: auto;
     scroll-snap-type: y mandatory;
     scroll-snap-align: center;
@@ -107,4 +154,10 @@ p {
     height: 100vh;
     background-size: cover;
     scroll-snap-align: start;
+}
+
+#gradient {
+    height: 100%;
+    background-color: rgb(19, 20, 35);
+    background-image: linear-gradient(to bottom, rgba(19, 20, 35, 0), rgba(255, 255, 255, 1));
 }

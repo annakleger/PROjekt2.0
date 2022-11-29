@@ -166,6 +166,14 @@ p {
     scroll-snap-align: start;
 }
 
+.section_projektbeschreibung {
+    scroll-snap-stop: always;
+    width: 100vw;
+    height: 200vh;
+    background-size: cover;
+    scroll-snap-align: start;
+}
+
 #gradient {
     height: 100%;
     background-color: rgb(19, 20, 35);
@@ -173,6 +181,7 @@ p {
 }
 
 .menu-bar {
+    position: sticky;
     margin: 0;
     display: flex;
     justify-content: center;
@@ -184,7 +193,17 @@ p {
     margin: 18px 0 0 0;
 }
 
+
+/* nunig sticky */
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
 .menu-item {
+    /* overflow: hidden; */
     border-radius: 25px;
     list-style: none;
     color: white;

@@ -21,11 +21,16 @@ for (var i = 0; i < divs.length; i++) {
     thisDiv.style.top = randomTop + "px";
     thisDiv.style.left = randomLeft + "px";
 
-    async function delay(time) {
-        await delay(time);
-    }
+    // async function delay(time) {
+    //     await delay(time);
+    // }
 
-    delay(8000);
+    // delay(8000);
+
+
+
+
+
 
 
 
@@ -35,9 +40,31 @@ for (var i = 0; i < divs.length; i++) {
 
         return Math.random() * (max - min) + min;
 
+        frameRate(50)
+
     }
 
 
 
 
 }
+
+
+// function delay(milliseconds) {
+//     return new Promise(resolve => {
+//         setTimeout(resolve, milliseconds);
+//     });
+// }
+
+// async function animation() {
+//     const text = ['a', 'ni', 'ma', 'tion'];
+//     let animatedText = '';
+//     for (i = 0; i < text.length; i++) {
+//         animatedText = animatedText + text[i];
+//         await delay(1000);
+//         document.getElementById('animation').innerHTML = animatedText;
+
+//     }
+// }
+
+// animation();

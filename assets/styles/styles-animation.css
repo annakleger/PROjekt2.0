@@ -354,7 +354,6 @@ p {
     padding: 2% 8%;
     text-align: center;
     text-decoration: none;
-    display: inline-block;
 }
 .button {
     transition-duration: 0.4s;

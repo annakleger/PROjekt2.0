@@ -1,0 +1,92 @@
+.container-vergleich {
+    width: 80%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menupunkt {
+    width: 100%;
+    height: auto;
+}
+
+
+/* Create three equal columns that float next to each other */
+
+.column {
+    padding: 2%;
+    float: left;
+    width: 29%;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+.button {
+    border: 1px solid;
+    color: #85426f;
+    padding: 2% 8%;
+    text-align: center;
+    text-decoration: none;
+    /* display: inline-block; */
+}
+
+.button {
+    transition-duration: 0.4s;
+}
+
+.button:hover {
+    background-color: #85426f;
+    border: 1px solid #85426f;
+    color: white;
+}
+
+
+/* CAROUSEL */
+
+.container-carousel {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    display: flex;
+}
+
+.content-carousel {
+    width: 100%;
+    height: 100%;
+    /* background-color: blueviolet; */
+    overflow: hidden;
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    overflow: auto;
+    scroll-snap-type: x mandatory;
+}
+
+.carousel .itemcarousel {
+    flex: 0 0 100%;
+    height: 100%;
+    display: grid;
+    scroll-snap-align: start;
+    place-items: center;
+    font-size: 1rem;
+    color: #fff;
+}

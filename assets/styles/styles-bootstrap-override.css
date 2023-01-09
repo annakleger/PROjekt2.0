@@ -32,7 +32,6 @@ body {
 }
 
 .container {
-    width: 100%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -50,8 +49,24 @@ h1 {
     text-align: center;
 }
 
+h4 {
+    color: #050d3c;
+    font-weight: 600;
+}
+
 p {
     line-height: 110%;
+    text-align: justify;
+    hyphens: auto;
+    color: #050d3c;
+}
+
+li {
+    color: #050d3c;
+}
+
+ul {
+    color: #050d3c;
 }
 
 .fullpage-centered {
@@ -204,4 +219,13 @@ a:hover {
 .frage {
     position: relative;
     z-index: 100;
+}
+
+.content {
+    margin-top: 5%;
+    width: 100%;
+}
+
+.img {
+    padding-bottom: 3%;
 }

@@ -24,17 +24,30 @@
 
 <body class="content-body">
 
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid justify-content-center">
+            <a class="navbar-brand" href="index.html">Anfassen Erfassen</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <nav class="navbar navbar-expand-lg  fixed-top py-3" id="mainNav">
-        <div class="container px-4 px-lg-5">
-            <a class="navbar-brand" href="bootstrap_index_celine.html">Anfassen Erfassen</a>
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ms-auto my-2 my-lg-0">
-                    <li class="nav-item"><a class="nav-link" href="#about">Gestaltungsprozess</a></li>
-                    <li class="nav-item"><a class="nav-link">Entwürfe</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tracking-daten.html">Tracking-Daten</a></li>
-                    <li class="nav-item"><a class="nav-link" href="tracking-videos.html">Tracking-Videos</a></li>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item jus">
+                        <a class="nav-link active" aria-current="page" href="#">Konzept</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="prozess.html">Prozess</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false">Tracking-Daten</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Tracking-Videos</a></li>
+                            <li><a class="dropdown-item" href="#">Rohdaten</a></li>
+                            <li><a class="dropdown-item" href="#">Datenvergleich</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -42,11 +55,11 @@
 
 
 
-    <div class="container content">
+    <div class="container">
         <hr>
         <div class="row">
             <div class="col-sm-5">
-                <h4 id="Projektbeschreibung">Projektbeschreibung </h4>
+                <h4 id="Konzept">Konzept </h4>
             </div>
 
             <div class="col-sm-6">
@@ -68,10 +81,10 @@
         <hr>
         <div class="row">
             <div class="col-sm-5">
-                <h4 id="Datenerfassung">Datenerfassung </h4>
+                <h4 id=" Datenerfassung ">Datenerfassung </h4>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-6 ">
                 <p> Um unsere Fragen zu beantworten und in digitaler Form zu visualisieren mussten wir konkrete Parameter definieren. </p>
                 <ul>
                     <li> Ort der Berührung im Gesicht &rarr; Gesichts-Koordinate </li>
@@ -85,12 +98,12 @@
 
 
         <hr>
-        <div class="row">
-            <div class="col-sm-5">
-                <h4 id="Tracking">Tracking</h4>
+        <div class="row ">
+            <div class="col-sm-5 ">
+                <h4 id="Tracking ">Tracking</h4>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-6 ">
                 <p>Unsere Gesichts-Berührungen sind meist unbewusst und abhängig von diversen Faktoren. Um die Trackingergebnisse nicht zu verfälschen entschlossen wir uns mit Videoaufnahmen zu arbeiten. Das Aufnehmen eines Videos ermöglicht es uns, das
                     Tracking während einer bestimmten Zeit zu «vergessen» und dennoch jegliche Form der Berührung&nbsp;&ndash; bewusst und unbewusst&nbsp;&ndash; zu erfassen. Um einen möglichst breiten Einblick in die Gewohnheiten von Gesichts-Berührungen
                     zu erhalten entschlossen wir uns in eher kürzeren Zeitspannen (10min), dafür über den Tag verteilt mehrfach zu tracken. Die zehnminütigen Aufnahmen eignen sich besonders gut, da wir uns durchschnittlich 11 mal in dieser Zeit im Gesicht
@@ -102,12 +115,12 @@
 
 
         <hr>
-        <div class="row">
-            <div class="col-sm-5">
-                <h4 id="Gesichts-Koordinatensystem">Gesichts-Koordinatensystem </h4>
+        <div class="row ">
+            <div class="col-sm-5 ">
+                <h4 id="Gesichts-Koordinatensystem ">Gesichts-Koordinatensystem </h4>
             </div>
 
-            <div class="col-sm-6">
+            <div class="col-sm-6 ">
                 <p>Um unsere Gesichts-Berührungen möglichst genau und einheitlich erfassen zu können haben wir Individuelle Messinstrumente erstellt. Die berührte Stellen im Gesicht erfassten wir mithilfe eines Koordinatensystems. Dazu unterteilten wir unser
                     Gesicht in 196 Bereiche die jeweils durch einen x-Achsen und einen y-Achsen Wert definiert sind. Dasselbe Koordinatensystem haben wir anschliessend auf der Website in p5 und js nachgebaut, um so eine abstrahierte, digitale Versions
                     unseres Gesichts zu erhalten. <br> Um unsere Gesichts-Berührungen möglichst genau und einheitlich erfassen zu können haben wir individuelle Messinstrumente erstellt. Die berührten Stellen im Gesicht erfassten wir mithilfe eines Koordinatensystems.
@@ -115,12 +128,12 @@
                     digitale Version unseres Gesichts zu erhalten. </p>
 
                 <!-- UMBRUECHE -->
-                <div class="row">
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                        <img class="img" src="assets/img/Konzept/Koordinaten_Anna.png " alt="Koordinaten Anna" width="100%">
+                <div class="row ">
+                    <div class="col-sm-12 col-md-12 col-lg-6 ">
+                        <img class="img" src="assets/img/Konzept/Koordinaten_Anna.png " alt="Koordinaten Anna " width="100% ">
 
                     </div>
-                    <div class="col-sm-12 col-md-12 col-lg-6">
+                    <div class="col-sm-12 col-md-12 col-lg-6 ">
 
                         <img class="img" src=" assets/img/Konzept/Koordinaten_Celine.png " alt="Koordinaten Celine " width="100% ">
                     </div>
@@ -144,31 +157,31 @@
 
                 <!-- UMBRUECHE -->
 
-                <div class="row">
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                        <img class="img" src="assets/img/Konzept/Tracking_Hand_LHR.png " alt="linker Handrücken" width="100%">
+                <div class="row ">
+                    <div class="col-sm-6 col-md-6 col-lg-6 ">
+                        <img class="img " src="assets/img/Konzept/Tracking_Hand_LHR.png " alt="linker Handrücken " width="100% ">
 
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="col-sm-6 col-md-6 col-lg-6 ">
 
-                        <img class="img" src="assets/img/Konzept/Tracking_Hand_LVH.png " alt="linke Vorderhand" width="100% ">
+                        <img class="img " src="assets/img/Konzept/Tracking_Hand_LVH.png " alt="linke Vorderhand " width="100% ">
                     </div>
 
 
 
-                    <div class="col-sm-6 col-md-6 col-lg-6">
-                        <img class="img" src="assets/img/Konzept/Tracking_Hand_RHR.png " alt="rechter Handrücken" width="100%">
+                    <div class="col-sm-6 col-md-6 col-lg-6 ">
+                        <img class="img " src="assets/img/Konzept/Tracking_Hand_RHR.png " alt="rechter Handrücken " width="100% ">
 
                     </div>
-                    <div class="col-sm-6 col-md-6 col-lg-6">
+                    <div class="col-sm-6 col-md-6 col-lg-6 ">
 
-                        <img class="img" src="assets/img/Konzept/Tracking_Hand_RVH.png " alt="rechte Vorderhand" width="100% ">
+                        <img class="img " src="assets/img/Konzept/Tracking_Hand_RVH.png " alt="rechte Vorderhand " width="100% ">
                     </div>
                 </div>
 
 
                 <p>Unsere personalisierten Messinstrumente ermöglichen es uns, unsere Daten sehr genau und individuell erfassen zu können. Um die Daten auf der Website auch visuell umsetzen zu können mussten sie in eine «fassbare» Form gebracht werden. <br>                    Dazu wurden die Daten aus Excel als CSV exportiert und in eine JSON array Datei konvertiert. </p>
-                <img class="img" src="assets/img/Konzept/Ausschnitt_Tracking_Excel.png " alt="Beispiel Tracking" width="100%">
+                <img class="img " src="assets/img/Konzept/Ausschnitt_Tracking_Excel.png " alt="Beispiel Tracking " width="100% ">
             </div>
         </div>
 
@@ -185,7 +198,8 @@
             </div>
         </div>
 
-        <div class="row">
+        <hr>
+        <div class="row ">
             <div class="col-sm-5 ">
                 <h4 id="Digitale-Visualisierung ">Digitale Visualisierung: «Berührt werden»</h4>
             </div>
@@ -196,8 +210,8 @@
                     eines Kopfes als auch bestimmte Verhaltensmuster zu erkennen. </p>
 
 
-                <div class="col-sm-12">
-                    <img src="assets/img/Konzept/Prozess_1.png " alt="Prozess Koordinatensystem " width=100%>
+                <div class="col-sm-12 ">
+                    <img class="img" src="assets/img/Konzept/Prozess_1.png " alt="Prozess Koordinatensystem " width=100%>
                 </div>
 
                 <p>Um auch auf das «womit» einzugehen wurden für die Hand bestimmte Visualisierungen festgelegt, die sich auf das Grid übertragen lassen. Das Koordinatensystem besteht aus quadratischen Feldern. Jedes dieser Felder entspricht ungefähr der
@@ -205,19 +219,19 @@
                     ein individuelles Linienraster für jede Handregion gewählt (Patterns). In den Fingerspitzen verlaufen die Rillen sehr enganliegend und fein. Diese Eigenschaft wurde auch auf die Patterns angewandt. Die Handballen wiederum nehmen sensorisch
                     weniger Informationen auf als die Fingerkuppen, ihr Linienraster ist daher gröber. </p>
 
-                <div class="row">
-                    <div class="col-sm-4 col-md-4 col-lg-4">
-                        <img class="img" src="assets/img/Konzept/BSP_Patterns_1.png " alt="Beispiel Haut" width="100%">
+                <div class="row ">
+                    <div class="col-sm-4 col-md-4 col-lg-4 ">
+                        <img class="img " src="assets/img/Konzept/BSP_Patterns_1.png " alt="Beispiel Haut " width="100% ">
 
                     </div>
-                    <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="col-sm-4 col-md-4 col-lg-4 ">
 
-                        <img class="img" src="assets/img/Konzept/BSP_Patterns_1.png " alt="Beispiel Haut" width="100% ">
+                        <img class="img " src="assets/img/Konzept/BSP_Patterns_1.png " alt="Beispiel Haut " width="100% ">
                     </div>
 
-                    <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="col-sm-4 col-md-4 col-lg-4 ">
 
-                        <img class="img" src="assets/img/Konzept/BSP_Patterns_3.png " alt="Beispiel Haut" width="100% ">
+                        <img class="img " src="assets/img/Konzept/BSP_Patterns_3.png " alt="Beispiel Haut " width="100% ">
                     </div>
 
                 </div>
@@ -279,11 +293,13 @@
 
 </body>
 
-<footer class="col-sm-12">
-    <p class="fullpage-centered">© Céline Schmid & Anna Kleger</p>
-
-
-
+<footer class="d-flex flex-wrap justify-content-center align-items-center py-3 my-4 border-top ">
+    <footer class="py-3 my-4">
+        <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item button"><a href="#" class="nav-link px-2 text-muted">nach oben</a></li>
+        </ul>
+        <p class="text-center text-muted">© Céline Schmid & Anna Kleger</p>
+    </footer>
 </footer>
 
 </html>

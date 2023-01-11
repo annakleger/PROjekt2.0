@@ -42,6 +42,18 @@ body {
     background-color: white;
 }
 
+.th {
+    border-bottom: 1px solid #84416e !important;
+}
+
+.table {
+    border: #84416e;
+}
+
+.table-striped {
+    font-size: 60%;
+}
+
 
 /* .container {
     height: auto;

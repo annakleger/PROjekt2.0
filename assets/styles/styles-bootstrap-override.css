@@ -26,8 +26,8 @@ body {
     min-height: 75rem;
     /* padding-top: 4.5rem; */
     background-color: --bs-emphasis-color;
-    overflow: auto;
-    scroll-snap-type: y mandatory;
+    /* overflow: auto;
+    scroll-snap-type: y mandatory; */
 }
 
 section {
@@ -79,8 +79,8 @@ hr {
 
 .child {
     height: 100vh;
-    scroll-snap-align: start;
-    scroll-snap-stop: always;
+    /* scroll-snap-align: start;
+    scroll-snap-stop: always; */
 }
 
 .container {

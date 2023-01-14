@@ -128,6 +128,12 @@ p {
     color: #84416e;
 }
 
+.p-video {
+    color: #84416e;
+    text-align: center;
+    font-size: larger;
+}
+
 li {
     color: #050d3c;
 }
